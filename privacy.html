@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | Enread</title>
+<style>
+  :root { --ink:#26241F; --sub:#6B6760; --line:#E4DFD5; --indigo:#33418C; --paper:#FFF6E6; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+    line-height:1.8; }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header { border-bottom:2px solid var(--indigo); padding-bottom:16px; margin-bottom:24px; }
+  h1 { font-size:24px; margin:0 0 4px; }
+  h2 { font-size:17px; margin:28px 0 8px; color:var(--indigo); }
+  .meta { color:var(--sub); font-size:13px; }
+  p, li { font-size:15px; }
+  ul { padding-left:1.2em; }
+  a { color:var(--indigo); }
+  .note { background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 16px; margin:16px 0; }
+  footer { margin-top:40px; padding-top:16px; border-top:1px solid var(--line); color:var(--sub); font-size:13px; }
+  nav a { margin-right:14px; font-size:13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>プライバシーポリシー</h1>
+  <div class="meta">Enread（イーンリード）／ 最終更新日: 2026年7月9日</div>
+</header>
+
+<p>本プライバシーポリシーは、森田真（以下「開発者」）が提供するアプリケーション「Enread」（以下「本アプリ」）における利用者の情報の取り扱いについて定めるものです。</p>
+
+<div class="note">
+<strong>要点：</strong>本アプリは、撮影・選択した画像を外部に送信しません。画像内の文字認識（OCR）はすべて利用者の端末内で行われます。翻訳・精読機能のためにサーバーへ送信されるのは、画像から抽出された、または利用者が入力・貼り付けた「テキスト」のみです。
+</div>
+
+<h2>1. 取得する情報と利用目的</h2>
+<p>本アプリは、以下の情報を各目的のために取り扱います。</p>
+<ul>
+  <li><strong>利用者が入力・貼り付け・読み込んだ英文テキスト</strong>：文単位の対訳生成、および語彙・構文の精読解説を提供するために使用します。</li>
+  <li><strong>購入・サブスクリプションの状態</strong>：Pro機能の提供および利用可否の判定のために、Appleが提供するStoreKitを通じて確認します。</li>
+  <li><strong>アプリ内の利用回数（端末内保存）</strong>：無料版の1日あたりの利用上限管理のために、利用者の端末内にのみ保存します。</li>
+</ul>
+
+<h2>2. 画像の取り扱い</h2>
+<p>本アプリのカメラおよび写真ライブラリへのアクセスは、英文を読み込むためにのみ使用されます。取得した画像は利用者の端末内で文字認識（OCR）処理され、<strong>画像そのものが開発者や第三者のサーバーに送信・保存されることはありません</strong>。文字認識後、画像はアプリ内に保持されず、抽出されたテキストのみが処理対象となります。</p>
+
+<h2>3. テキストの外部送信について</h2>
+<p>対訳・精読機能を提供するため、利用者が入力・読み込んだ英文テキストは、開発者が管理する中継サーバー（Cloudflare Workers）を経由して、Anthropic, PBC が提供する Claude API に送信され、処理結果が返されます。送信されるのはテキストのみであり、氏名・連絡先等の個人を特定する情報は付随しません。</p>
+<p>Anthropic におけるデータの取り扱いについては、同社のプライバシーポリシーをご参照ください。</p>
+
+<h2>4. 端末内に保存される情報</h2>
+<p>読み込んだ英文および生成された対訳・精読の結果は、利用者の端末内（SwiftData）に保存され、履歴として参照できます。これらは開発者のサーバーには保存されません。利用者はアプリ内の操作でこれらをいつでも削除できます。</p>
+
+<h2>5. 第三者への提供</h2>
+<p>開発者は、法令に基づく場合を除き、利用者の情報を第三者に販売・提供しません。本アプリの機能提供に必要な範囲で、前述のAppleおよびAnthropic等のサービスを利用します。</p>
+
+<h2>6. 広告・トラッキング</h2>
+<p>本アプリは広告を表示しません。また、広告目的で利用者を追跡（トラッキング）することはありません。</p>
+
+<h2>7. 子どもの利用について</h2>
+<p>本アプリは、特定の年齢層を対象とした個人情報の収集を意図的に行いません。</p>
+
+<h2>8. 情報の安全管理</h2>
+<p>開発者は、取り扱う情報について、漏洩・滅失・毀損の防止に努めます。サーバーとの通信は暗号化（HTTPS）されます。</p>
+
+<h2>9. 本ポリシーの変更</h2>
+<p>本ポリシーの内容は、必要に応じて変更されることがあります。重要な変更がある場合は、本アプリまたは本ページにて告知します。</p>
+
+<h2>10. お問い合わせ</h2>
+<p>本ポリシーに関するお問い合わせは、以下までご連絡ください。</p>
+<ul>
+  <li>提供者：森田真</li>
+  <li>メール：<a href="mailto:sentianzhen87@gmail.com">sentianzhen87@gmail.com</a></li>
+</ul>
+
+<footer>
+<nav>
+  <a href="index.html">ホーム</a>
+  <a href="terms.html">利用規約</a>
+  <a href="privacy.html">プライバシーポリシー</a>
+  <a href="tokusho.html">特定商取引法に基づく表記</a>
+  <a href="support.html">サポート / FAQ</a>
+</nav>
+<div>© 2026 森田真 — Enread</div>
+</footer>
+</div>
+</body>
+</html>
